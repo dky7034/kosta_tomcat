@@ -7,17 +7,17 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-public class test01 {
+public class Test01 {
 
     public static void main(String[] args) {
         try {
-            String kdg_apiKey = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5ODI4NGYxMGI3MTBmMTUxOTRjZDgwMDY5MjgzYTBhYSIsIm5iZiI6MTcyMDQ0OTQ0Ny4xMTEwOTIsInN1YiI6IjY1YjA1NDY2MTU4Yzg1MDBhYzFkNmQxYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.1kXFvsj_RnOgh0Cl4XjUTCx9Xjxl8yC0k9gWw3pXFAI";
+            ApiToken apiToken = new ApiToken();
             String url = "https://api.themoviedb.org/3/authentication";
-
+            String token = apiToken.getApiToken();
             HttpRequest request = HttpRequest.newBuilder()
                     .uri(URI.create(url))
                     .header("accept", "application/json")
-                    .header("Authorization", "Bearer " + kdg_apiKey)
+                    .header("Authorization", "Bearer " + token)
                     .GET()
                     .build();
 
