@@ -258,4 +258,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# api token 제외
+ApiToken.java
+
 # End of https://www.toptal.com/developers/gitignore/api/maven,intellij+iml,java,eclipse,macos,windows
