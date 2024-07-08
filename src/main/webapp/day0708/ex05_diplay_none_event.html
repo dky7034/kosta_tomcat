@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display_none_event</title>
+    <script type="text/javascript">
+        function pro() {
+            document.getElementById("box").style.display = "inline-block";
+        }
+    </script>
+    <style>
+        .box {
+            display: none;
+            border: solid 1px black;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <span>
+        HTML
+    </span>
+    <span class="box" id="box">
+        CSS
+    </span>
+    <span>
+        JavaScript
+    </span>
+    <hr>
+    <button onclick="pro()">
+        보이기
+    </button>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        li {
+            list-style: none;
+            float: left; /* 가로 배치 */
+            background: pink;
+            /*margin: 10px;*/
+            padding: 15px;
+            /*border-radius: 15px; !* 테두리의 둥근 정도 *!*/
+        }
+
+        li:nth-child(2n) {
+            background: pink;
+        }
+
+        li:nth-child(2n+1) {
+            /*background: yellow;*/
+            background: #D2C2E3;
+        }
+
+        li:first-child {
+            border-radius: 15px 0 0 15px;
+        }
+
+        li:last-child {
+            border-radius: 0 15px 15px 0;
+        }
+
+    </style>
+</head>
+<body>
+<ul>
+    <li>첫번째</li>
+    <li>두번째</li>
+    <li>세번째</li>
+    <li>네번째</li>
+    <li>다섯번째</li>
+    <li>여섯번째</li>
+    <li>일곱번째</li>
+</ul>
+</body>
+</html>

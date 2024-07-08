@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display_visibility</title>
+    <style>
+        .box {
+            visibility: hidden;
+            border: solid 1px black;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+        }
+    </style>
+    <script type="text/javascript">
+        document.getElementById("box").style.visibility = "visible";
+    </script>
+</head>
+<body>
+    <span>
+        HTML
+    </span>
+    <span class="box" id="box">
+        CSS
+    </span>
+    <span>
+        JavaScript
+    </span>
+    <hr>
+    <button onclick="pro()">
+        보이기
+    </button>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <!-- 문서의 문자 인코딩 설정 -->
+    <meta charset="UTF-8">
+    <!-- 뷰포트 설정으로 모바일 디바이스에 대응 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 문서의 제목 설정 -->
+    <title>Online Music Streaming Service</title>
+    <!-- 외부 CSS 파일 연결 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <!-- 네비게이션 바 -->
+    <nav>
+        <div class="logo">
+            <h1><a href="#home">Music</a></h1>
+        </div>
+        <ul>
+            <li><a href="#home">홈</a></li>
+            <li><a href="#browse">둘러보기</a></li>
+            <li><a href="#playlist">보관함</a></li>
+        </ul>
+        <button class="new-playlist">+ 새 재생목록</button>
+    </nav>
+
+    <!-- 메인 컨텐츠 -->
+    <main>
+        <header>
+            <!-- 검색 입력창 -->
+            <input type="text" placeholder="노래, 앨범, 아티스트, 팟캐스트 검색">
+        </header>
+
+        <!-- 빠른 선곡 섹션 -->
+        <section id="featured-songs">
+            <h2>빠른 선곡</h2>
+            <div class="card-row">
+                <!-- 카드 1 -->
+                <div class="card">
+                    <img src="./image/뉴진스_OMG.jpg" alt="Random Image">
+                    <div class="info">
+                        <h3>OMG</h3>
+                        <p>NewJeans(뉴진스)</p>
+                        <audio controls><source src="./audio/NewJeans%20(뉴진스)%20'OMG'%20Official%20MV%20(Performance%20ver.1).mp3" type="audio/mp3"></audio>
+                    </div>
+                </div>
+                <!-- 카드 2 -->
+                <div class="card">
+                    <img src="./image/BIG_Naughty(서동현).jpeg" alt="Random Image">
+                    <div class="info">
+                        <h3>Vancouver</h3>
+                        <p>BIG Naughty(서동현)</p>
+                        <audio controls><source src="./audio/Vancouver_(Vancouver).mp3" type="audio/mp3"></audio>
+                    </div>
+                </div>
+                <!-- 카드 3 -->
+                <div class="card">
+                    <img src="./image/괜찮아도%20괜찮아.png" alt="Random Image">
+                    <div class="info">
+                        <h3>괜찮아도 괜찮아</h3>
+                        <p>D.O(도경수)</p>
+                        <audio controls><source src="./audio/디오(D.O.)%20-%20괜찮아도%20괜찮아%20(That's%20okay).mp3" type="audio/mp3"></audio>
+                    </div>
+                </div>
+                <!-- 카드 4 -->
+                <div class="card">
+                    <img id="punch" src="./image/punch.jpeg" alt="Random Image">
+                    <div class="info">
+                        <h3>사랑이 불어오나 봐(The Love)</h3>
+                        <p>펀치(Punch)</p>
+                        <audio controls><source src="./audio/펀치(Punch)_사랑이_불어오나_봐_(The_Love).mp3" type="audio/mp3"></audio>
+                    </div>
+                </div>
+                <!-- 카드 5 -->
+                <div class="card">
+                    <img src="https://picsum.photos/320/200" alt="Random Image">
+                    <div class="info">
+                        <h3>Song Title 5</h3>
+                        <p>Artist 5</p>
+                    </div>
+                </div>
+                <!-- 카드 6 -->
+                <div class="card">
+                    <img src="https://picsum.photos/320/200" alt="Random Image">
+                    <div class="info">
+                        <h3>Song Title 6</h3>
+                        <p>Artist 6</p>
+                    </div>
+                </div>
+                <!-- 카드 7 -->
+                <div class="card">
+                    <img src="https://picsum.photos/320/200" alt="Random Image">
+                    <div class="info">
+                        <h3>Song Title 7</h3>
+                        <p>Artist 7</p>
+                    </div>
+                </div>
+                <!-- 카드 8 -->
+                <div class="card">
+                    <img src="https://picsum.photos/320/200" alt="Random Image">
+                    <div class="info">
+                        <h3>Song Title 8</h3>
+                        <p>Artist 8</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 다시 듣기 섹션 -->
+        <section id="recently-played-songs">
+            <h2>다시 듣기</h2>
+            <div class="card-row">
+                <!-- 카드 9 -->
+                <div class="card">
+                    <img src="https://picsum.photos/320/200" alt="Random Image">
+                    <div class="info">
+                        <h3>Song Title 9</h3>
+                        <p>Artist 9</p>
+                    </div>
+                </div>
+                <!-- 카드 10 -->
+                <div class="card">
+                    <img src="https://picsum.photos/320/200" alt="Random Image">
+                    <div class="info">
+                        <h3>Song Title 10</h3>
+                        <p>Artist 10</p>
+                    </div>
+                </div>
+                <!-- 카드 11 -->
+                <div class="card">
+                    <img src="https://picsum.photos/320/200" alt="Random Image">
+                    <div class="info">
+                        <h3>Song Title 11</h3>
+                        <p>Artist 11</p>
+                    </div>
+                </div>
+                <!-- 카드 12 -->
+                <div class="card">
+                    <img src="https://picsum.photos/320/200" alt="Random Image">
+                    <div class="info">
+                        <h3>Song Title 12</h3>
+                        <p>Artist 12</p>
+                    </div>
+                </div>
+                <!-- 카드 13 -->
+                <div class="card">
+                    <img src="https://picsum.photos/320/200" alt="Random Image">
+                    <div class="info">
+                        <h3>Song Title 13</h3>
+                        <p>Artist 13</p>
+                    </div>
+                </div>
+                <!-- 카드 14 -->
+                <div class="card">
+                    <img src="https://picsum.photos/320/200" alt="Random Image">
+                    <div class="info">
+                        <h3>Song Title 14</h3>
+                        <p>Artist 14</p>
+                    </div>
+                </div>
+                <!-- 카드 15 -->
+                <div class="card">
+                    <img src="https://picsum.photos/320/200" alt="Random Image">
+                    <div class="info">
+                        <h3>Song Title 15</h3>
+                        <p>Artist 15</p>
+                    </div>
+                </div>
+                <!-- 카드 16 -->
+                <div class="card">
+                    <img src="https://picsum.photos/320/200" alt="Random Image">
+                    <div class="info">
+                        <h3>Song Title 16</h3>
+                        <p>Artist 16</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+</body>
+</html>

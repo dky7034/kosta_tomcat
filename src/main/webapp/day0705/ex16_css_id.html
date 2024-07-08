@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #header {
+            width: 400px;
+            background: red;
+            margin: 0 auto; /* 위 아래 여백 0, 좌우 여백 자동 => 가로 가운데 위치시킴 */
+        }
+
+        #wrap {
+            width: 800px;
+            background: blue;
+            margin: 0 auto; /* 위 아래 여백 0, 좌우 여백 자동 => 가로 가운데 위치시킴 */
+            overflow: hidden;
+        }
+
+        #aside {
+            width: 20%; /* 부모인 wrap을 기준으로 20% 차지 */
+            background: yellow;
+            float: left; /* 가로로 왼쪽에서부터 배치 */
+
+        }
+        #content {
+            width: 80%; /* 부모인 wrap을 기준으로 80% 차지 */
+            background: green;
+            float: left; /* 가로로 왼쪽에서부터 배치 */
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    <h1>Header 태그</h1>
+</div>
+<div id="wrap">
+    <div id="aside">
+        <h1>aside 태그</h1>
+    </div>
+    <div id="content">
+        <h1>content 태그</h1>
+    </div>
+</div>
+</body>
+</html>

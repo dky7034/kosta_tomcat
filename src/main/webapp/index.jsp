@@ -1,0 +1,23 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>punch</h1>
+<p>
+    가수 펀치(Punch)가 OST 강자의 존재감을 드러냈다.
+    펀치가 가창한 KBS 2TV 월화드라마 ‘멱살 한번 잡힙시다’(연출 이호, 이현경 / 극본 배수영)의 세 번째 OST ‘Run Far Away(런 파 어웨이)’가 1일 발매가 됐다.
+    <hr>
+    ‘Run Far Away’는 중독성 강한 라인과 웅장한 사운드가 어우러진 미디엄 템포의 곡이다. 펀치가 가창에 참여해 극 전반에 흐르는 긴장감과 주인공의 욕망을 표현했다.
+    <hr>
+<%--    <pre>--%>
+    펀치는 드라마 분위기에 맞춰 기존 음색에 변화를 줬다는 후문이다. 앞서 선보여 온 음악들과는 또 다른 보이스로 ‘음색 여제’다운 존재감을 발휘할 전망이다.
+<%--    </pre>--%>
+</p>
+<hr>
+<img src="day0703/punch.png" width="100" height="100">
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /* 사용할 수 있는 것 */
+        input:enabled {
+            background: pink;
+        }
+        /* 사용할 수 없는 것 */
+        input:disabled {
+            background: blue;
+        }
+        /* 포커스를 얻은 것*/
+        input:focus {
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+<h2>사용가능</h2>
+<input type="text"><br>
+<input type="text"><br>
+<input type="text"><br>
+<h2>사용불가능</h2>
+<input type="text" disabled="disabled">
+</body>
+</html>
