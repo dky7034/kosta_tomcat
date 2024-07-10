@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function sum() {
+            var name = document.getElementById('name').value;
+            var n1 = eval(document.getElementById('kor').value);
+            var n2 = eval(document.getElementById('eng').value);
+            var n3 = eval(document.getElementById('math').value);
+            var result = n1 + n2 + n3;
+            document.getElementById('outputSum').innerHTML = result;
+        }
+
+        function avg() {
+            var n1 = eval(document.getElementById('kor').value);
+            var n2 = eval(document.getElementById('eng').value);
+            var n3 = eval(document.getElementById('math').value);
+            var sum = n1 + n2 + n3;
+            var result = sum / 3;
+
+            document.getElementById('outputAvg').innerHTML = result;
+        }
+
+        function result() {
+            var n1 = eval(document.getElementById('kor').value);
+            var n2 = eval(document.getElementById('eng').value);
+            var n3 = eval(document.getElementById('math').value);
+            var sum = n1 + n2 + n3;
+            var result = sum / 3;
+            if (result > 90) {
+                document.getElementById('outputGrade').innerHTML = 'A';
+            } else if (result > 80) {
+                document.getElementById('outputGrade').innerHTML = 'B';
+            } else if (result > 70) {
+                document.getElementById('outputGrade').innerHTML = 'C';
+            } else if (result > 60) {
+                document.getElementById('outputGrade').innerHTML = 'D';
+            } else {
+                document.getElementById('outputGrade').innerHTML = 'F';
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <!-- 이름, 국어, 영어, 수학을 입력받아
+         총점과 평균을 구하여 출력하고
+         평균에 따라 A, B, C, D, F를 판별하여 출력하도록 합니다.
+         화면 구성은 자유롭게 하세요.
+    -->
+    <h2>점수 계산 프로그램</h2>
+    <hr>
+    이름을 입력하세요 ==>
+    <input type="text" id="name"><br>
+    국어 점수를 입력하세요 ==>
+    <input type="text" id="kor"><br>
+    영어 점수를 입력하세요 ==>
+    <input type="text" id="eng"><br>
+    수학 점수를 입력하세요 ==>
+    <input type="text" id="math"><br>
+    <hr>
+    <button onclick="sum()">총점 확인</button>
+    총점: <span id="outputSum"></span><br>
+    <button onclick="avg()">평균 확인</button>
+    평균: <span id="outputAvg"></span><br>
+    <button onclick="result()">등급 확인</button>
+    등급: <span id="outputGrade"></span>
+</body>
+</html>

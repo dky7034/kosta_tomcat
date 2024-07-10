@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var data = ["김예은", "홍석영", "유요한", "조영흔", "이재원"];
+        function pro() {
+            var str = "<ul>"
+            for (i=0; i<data.length; i++) {
+                str += "<li>" + data[i] + "</li>";
+            }
+            str += "</ul>";
+            document.getElementById("list").innerHTML = str;
+        }
+    </script>
+</head>
+<body>
+    <h2>저기어때</h2>
+    <div id="list"></div>
+    <button onclick="pro()">출력하기</button>
+</body>
+</html>

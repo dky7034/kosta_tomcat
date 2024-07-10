@@ -1,4 +1,4 @@
-package com.example.kosta_tomcat;
+package com.kosta.tomcat;
 
 import org.json.JSONObject;
 
@@ -11,9 +11,9 @@ public class Test01 {
 
     public static void main(String[] args) {
         try {
-            ApiToken apiToken = new ApiToken();
-            String url = "https://api.themoviedb.org/3/authentication";
-            String token = apiToken.getApiToken();
+            ApiKey apiKey = new ApiKey();
+            String url = "https://api.themoviedb.org/3/person/popular?api_key=" + apiKey.getApiKey();
+            String token = apiKey.getApiKey();
             HttpRequest request = HttpRequest.newBuilder()
                     .uri(URI.create(url))
                     .header("accept", "application/json")
@@ -27,7 +27,9 @@ public class Test01 {
             System.out.println(response.body());
 
             JSONObject jsonObject = new JSONObject(response.body());
-            System.out.println(jsonObject.get("success"));
+            System.out.println(jsonObject.get("page"));
+
+//            System.out.println("응답 바디의 클래스: " + response.body().getClass());
 
 
         } catch (Exception e) {

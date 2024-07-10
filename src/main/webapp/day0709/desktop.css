@@ -1,0 +1,6 @@
+/* 데스크탑 */
+@media screen and (min-width: 960px) {
+    body {
+        background: blue;
+    };
+}

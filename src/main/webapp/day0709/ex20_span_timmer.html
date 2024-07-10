@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+오늘날짜: <span id='output'></span>
+<script type="text/javascript">
+    function pro() {
+        var today = new Date();
+        var year = today.getFullYear();
+        var month = today.getMonth() + 1;
+        var date = today.getDate();
+        var hour = today.getHours();
+        var minute = today.getMinutes();
+        var second = today.getSeconds();
+
+        var data = year + '년 ' + month + '월 ' + date + '일 ' + hour + '시 ' + minute + '분 ' + second + '초'
+
+        document.getElementById('output').innerHTML = data;
+    }
+
+    setInterval(pro, 3000);
+</script>
+</body>
+</html>

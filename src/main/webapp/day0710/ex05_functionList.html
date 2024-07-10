@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="functionList.js"></script>
+    <script type="text/javascript">
+        let member = ["김예은", "홍석영", "유요한", "조영흔", "이재원"];
+        // 배열을 매개변수로 전달받아 순서 없는 목록을 만들어서 반환하는 함수를 갖고 있는 외부 자바스크립트 파일을 만들고
+        // 그것을 이 문서에 포함시켜 "회원 목록 출력"을 누르면 함수를 호출하여 div에 출력이 되도록 합니다.
+
+        // html 문서가 모두 읽어들여지면 함수를 동작합니다.
+        window.onload = function() {
+            // document에서(html에서) 아이디가 btnList인 요소를 찾아서 btnList 변수에 저장합니다.
+            let btnList = document.getElementById('btnList');
+            // btnList를 누르면 함수를 동작시킵니다.
+            btnList.onclick = function () {
+                // 회원목록이 저장된 배열을 매개변수로 전달하여 순서 없는 목록을 만들어주는 함수를 호출합니다.
+                let str = makeListFromArr(member);
+                // str을 아이디가 output인 요소를 찾아서 그 안의 html로 설정합니다.
+                document.getElementById("output").innerHTML = str;
+            };
+        };
+    </script>
+</head>
+<body>
+<h2>회원목록</h2>
+<hr>
+<div id="output"></div>
+<button id="btnList">회원목록 출력</button>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function pro() {
+            var kor = eval(document.getElementById('kor').value);
+            var eng = eval(document.getElementById('eng').value);
+            var math = eval(document.getElementById('math').value);
+            var tot = kor + eng + math;
+            var avg = tot / 3;
+            var result = "";
+            if (avg >= 90) {
+                result = "A";
+            } else if (avg >= 80) {
+                result = "B";
+            } else if (avg >= 70) {
+                result = "C";
+            } else if (avg >= 60) {
+                result = "D";
+            } else {
+                result = "F";
+            }
+            document.getElementById('tot').innerHTML = tot;
+            document.getElementById('avg').innerHTML = avg;
+            document.getElementById('result').innerHTML = result;
+        }
+    </script>
+</head>
+<body>
+    <!-- 이름, 국어, 영어, 수학을 입력받아
+         총점과 평균을 구하여 출력하고
+         평균에 따라 A, B, C, D, F를 판별하여 출력하도록 합니다.
+         화면 구성은 자유롭게 하세요.
+    -->
+    <h2>점수 계산 프로그램</h2>
+    <hr>
+    이름을 입력하세요 ==>
+    <input type="text" id="name"><br>
+    국어 점수를 입력하세요 ==>
+    <input type="text" id="kor"><br>
+    영어 점수를 입력하세요 ==>
+    <input type="text" id="eng"><br>
+    수학 점수를 입력하세요 ==>
+    <input type="text" id="math"><br>
+    <button onclick="pro()">확인</button>
+    <hr>
+    총점: <span id="tot"></span><br>
+    평균: <span id="avg"></span><br>
+    등급: <span id="result"></span><br>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <img src="" id="output">
+    <script type="text/javascript">
+        var today = new Date();
+        var hh = today.getHours();
+        if (hh < 17) {
+            document.getElementById('output').src = "AI_로봇.jpg";
+        } else {
+            document.getElementById('output').src = "punch.jpeg";
+        }
+    </script>
+</body>
+</html>

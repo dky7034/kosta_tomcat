@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function printCalendar() {
+            var today = new Date(); // 오늘 날짜를 가져옵니다.
+            var year = today.getFullYear(); // 올해 연도를 가져옵니다.
+            var month = today.getMonth(); // 이번 달을 가져옵니다 (0부터 시작).
+
+            // 이번 달의 1일의 Date 객체를 생성합니다.
+            var startDate = new Date(year, month, 1);
+            // alert(startDate); // 시작 날짜를 알림으로 보여줍니다.
+
+            // 이번 달 1일의 요일을 가져옵니다.
+            var day = startDate.getDay();
+            // alert(day); // 1일의 요일을 알림으로 보여줍니다.
+
+            // 이번 달의 마지막 날짜 객체를 생성합니다.
+            var endDate = new Date(year, month + 1, 0); // "yaer" 오타 수정
+            // 마지막 날짜를 알아옵니다.
+            var last = endDate.getDate(); // 마지막 날을 가져옵니다. "getDay" 대신 "getDate"로 수정
+
+
+            var str = "<h3>"; // 달력을 출력할 문자열을 초기화합니다.
+            str += year + "년 " + (month + 1) + "월"; // 연도와 월을 문자열에 추가합니다.
+            str += "</h3>";
+
+            str += "<table border='1'>"; // 테이블을 시작합니다.
+            str += "<tr>"; // 테이블 헤더 행을 시작합니다.
+            str += "<th>일</th>"; // 일요일 헤더
+            str += "<th>월</th>"; // 월요일 헤더
+            str += "<th>화</th>"; // 화요일 헤더
+            str += "<th>수</th>"; // 수요일 헤더
+            str += "<th>목</th>"; // 목요일 헤더
+            str += "<th>금</th>"; // 금요일 헤더
+            str += "<th>토</th>"; // 토요일 헤더
+            str += "</tr>";
+
+            str += "<tr>"; // 첫 번째 주를 시작합니다.
+
+            // 1일의 요일만큼 빈칸을 출력합니다.
+            for (j = 0; j < day; j++) {
+                str += "<td>&nbsp;</td>";
+            }
+
+            // 날짜를 출력합니다.
+            for (i = 1; i <= last; i++) {
+                str += "<td>" + i + "</td>"; // 날짜를 출력합니다.
+                if ((i + day) % 7 == 0) { // 한 주가 끝나면 줄을 바꿉니다.
+                    str += "</tr><tr>";
+                }
+            }
+            str += "</tr>"; // 마지막 주를 닫습니다.
+            str += "</table>"; // 테이블을 닫습니다.
+
+            // 문자열을 HTML로 출력합니다.
+            document.getElementById("calendar").innerHTML = str;
+        }
+
+        // "html 문서를 모두 다 읽어들인 다음에"라는 이벤트입니다.
+        // 우리가 작성하게 되는 모든 자바스크립트 코드는 이 속에 넣도록 해야 합니다.
+        window.onload = function() {
+            printCalendar();
+        }
+
+    </script>
+</head>
+<body>
+<div id="calendar"></div> <!-- 달력이 출력될 div 요소 -->
+<hr>
+<!--<button onclick="pro()">출력하기</button> &lt;!&ndash; 버튼을 클릭하면 달력을 출력합니다. &ndash;&gt;-->
+</body>
+</html>
