@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // let data = ["홍길동", 20, "서울시 종로구 관철동"];
+        // alert(data[0]);
+        // alert(data[1]);
+        // alert(data[2]);
+        // alert(typeof (data)); // 자바스크립트는 배열도 객체로 표현합니다.
+
+        // 자바스크립트 객체의 표현
+        // JavaScript Object Notation ==> JSON
+        let data = {
+            name: "홍길동",
+            age: 20,
+            addr: "서울시 종로구 관철동"
+        };
+        alert(data.name);
+        alert(data['name']);
+
+        alert(typeof (data)); // object 타입!
+
+        let key = "age";
+        alert(data.key); // undefined
+        alert(data[key]);
+</script>
+
+</body>
+</html>

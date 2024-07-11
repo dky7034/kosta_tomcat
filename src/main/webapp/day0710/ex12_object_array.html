@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="myUtil.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+    // 객체의 배열
+    // let data = {
+    //     name: "홍길동",
+    //     age: 20,
+    //     addr: "서울시 종로구 관철동"
+    // };
+    let data = [
+        {dno: 10, dname: '기획팀', dloc: '종각'},
+        {dno: 20, dname: '영업팀', dloc: '종각'},
+        {dno: 30, dname: '개발1팀', dloc: '판교'},
+        {dno: 40, dname: '개발2팀', dloc: '가산'},
+        {dno: 50, dname: '개발3팀', dloc: '가산'}
+    ]
+    // for (i = 0; i < data.length; i++) { // ==> 배열의 요소만큼 반복
+    //     let row = data[i];
+    //     // console.log(row);
+    //     // alert(row); // object 출력
+    //     // console.log(row.dno, row.dname, row.dloc);
+    //     for (let key in row) {  // => 객체의 속성만큼 반복
+    //         console.log(row[key]);
+    //     }
+    // }
+    makeTableFromArr(data);
+</script>
+
+</body>
+</html>

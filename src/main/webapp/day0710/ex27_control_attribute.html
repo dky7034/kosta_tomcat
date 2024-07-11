@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        window.onload = function () {
+            let player = document.querySelector('#player');
+            player.setAttribute("src", "punch.jpeg");
+            player.setAttribute("width", "200px");
+            player.setAttribute("height", "200px");
+
+            let now_src = document.querySelector('#now').getAttribute("src");
+            alert(now_src);
+        };
+    </script>
+</head>
+<body>
+    <img id="player">
+    <hr>
+    <img id="now" src="punch.jpeg">
+
+</body>
+</html>

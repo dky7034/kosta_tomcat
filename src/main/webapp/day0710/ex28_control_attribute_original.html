@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        window.onload = function () {
+            // 원래부터 html 태그가 갖고 있는 속성을 . (닷) 연산자를 통해서 속성에 접근할 수 있습니다.
+            let player = document.querySelector('#player');
+            player.src = "punch.jpeg";
+            player.width = 200;
+            player.height = 200;
+
+            let now_src = document.querySelector('#now').src;
+            alert(now_src);
+        };
+    </script>
+</head>
+<body>
+    <img id="player">
+    <hr>
+    <img id="now" src="punch.jpeg">
+</body>
+</html>

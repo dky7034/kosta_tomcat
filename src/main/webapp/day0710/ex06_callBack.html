@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // 배열을 매개변수로 전달받아 배열을 요소로 모두 누적하여 출력하는 함수
+        // 두 번째 매개변수로 함수이름을 전달받아서 함수가 끝나면 매개변수로 전달받은 함수를 동작시킵니다 => 콜백함수
+        let add = function (arr, callBack) {
+            let tot = 0;
+            for (i = 0; i < arr.length; i++) {
+                tot += arr[i];
+            }
+            alert("배열의 총합: " + tot);
+            callBack(); //=> 콜백함수
+        };
+        let end = function () {
+            alert("작업완료");
+        };
+        let data = [10, 20, 30, 40, 50];
+        add(data, end());
+        // add 함수를 호출할 때 두 번째 매개변수로 함수이름 end를 전달하여 add 함수의 내용이 끝난 다음 end 함수를 자동으로 동작하도록 합니다.
+        // 이와 같이 함수 호출시에 매개변수로 전달되는 함수를 "콜백함수"라고 합니다.
+        // 일반적으로 end 자리에 이름 없는 함수(익명함수)를 사용하는 것이 일반적입니다.
+    </script>
+
+</body>
+</html>

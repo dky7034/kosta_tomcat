@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        window.onload = function () {
+            // let members = document.getElementsByClassName("member");
+            let members = document.querySelectorAll('.member');
+            alert(members.length);
+            // 배열의 요소 모두 배경을 분홍색으로 설정
+            // for (i=0; i<members.length; i++) {
+            //     members[i].style.background = "pink";
+            // }
+            for (let key in members) {
+                members[key].style.background = 'red';
+            }
+        };
+    </script>
+</head>
+<body>
+    <h1 class="member">강동균</h1>
+    <h1>홍길동</h1>
+    <h1 class="member">박성빈</h1>
+    <h1 class="member">유현진</h1>
+    <h1>이순신</h1>
+    <h1 class="member">최가은</h1>
+    <h1>유관순</h1>
+</body>
+</html>

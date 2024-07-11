@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        window.onload = function () {
+            // let h1_list = document.getElementsByTagName('h1');
+            let h1_list = document.querySelectorAll('h1');
+            alert(h1_list);
+
+            for (let key in h1_list) {
+                h1_list[key].style.background = 'yellow';
+            }
+        };
+    </script>
+</head>
+<body>
+    <h1>강동균</h1>
+    <h3>서울시 종로구 관철1동</h3>
+
+    <h1>박성빈</h1>
+    <h3>서울시 종로구 관철2동</h3>
+
+    <h1>유현진</h1>
+    <h3>서울시 종로구 관철3동</h3>
+</body>
+</html>

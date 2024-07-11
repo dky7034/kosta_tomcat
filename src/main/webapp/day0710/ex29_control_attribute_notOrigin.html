@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        div {
+            background: orange;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+    </style>
+    <script type="text/javascript">
+        // window.onload = function () {
+        //     let divs = document.querySelectorAll("div");
+        //     for (let i = 0; i < divs.length; i++) {
+        //         divs[i].setAttribute("idx", i);
+        //     }
+        // };
+        window.onload = function () {
+            let divs = document.querySelectorAll("div");
+            for (let index in divs) {
+                divs[index].setAttribute("idx", index);
+            }
+        };
+    </script>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>
